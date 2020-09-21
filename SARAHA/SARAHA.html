@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <body style="background-color:red;">
+   </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <H style="font-size:50px">SARAHA CONTACT.COM</H>
+<head>
+	<style>
+    	* { font: 17px Calibri; }
+    </style>
+</head>
+<body>
+    <h3 style="font-size:50px">WELCOME TO SARAHA.COM PLEASE WRITE ( READY FOR SARAHA ) TO START</h3>
+    <input type="text" id="txt" onkeyup="manage(this)" />
+    <form> 
+    <input type="button" id="btSubmit" disabled 
+    value="START"
+    onClick="self.location='Saraha Contact Form.html'">
+  </form>
+</body>
+
+<script>
+	function manage(txt) {
+        var bt = document.getElementById('btSubmit');
+        if (txt.value != 'READY FOR SARAHA') {
+            bt.disabled = true;
+        }
+        else {
+            bt.disabled = false ;
+        }
+    }    
+
+
+// 	Using ES6 feature.
+// 	let manage = (txt) => { 
+//     	let bt = document.getElementById('btSubmit');
+//         if (txt.value != 'Z22N') {
+//             bt.disabled = true;
+//         }
+//         else {
+//             bt.disabled = false;
+//         }
+//     }
+</script>
+</html>
+
+
